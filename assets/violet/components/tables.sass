@@ -1,0 +1,16 @@
+table
+  width: 100%
+  margin-bottom: 1.25rem
+
+  th
+    text-align: left
+    
+  th,
+  td
+    @include soft-ends($padding / 8)
+
+  &.border
+    th,
+    td
+      @include soft($padding / 8)
+      border: 1px solid $gray8

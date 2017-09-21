@@ -1,0 +1,91 @@
+@mixin soft($p)
+  padding: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding: $p
+
+@mixin soft-sides($p)
+  padding-left:  $p * $mobile-scale
+  padding-right: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding-left:  $p * $tablet-scale
+    padding-right: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding-left:  $p
+    padding-right: $p
+
+@mixin soft-ends($p)
+  padding-top:    $p * $mobile-scale
+  padding-bottom: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding-top:    $p * $tablet-scale
+    padding-bottom: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding-top:    $p
+    padding-bottom: $p
+
+@mixin soft-top($p)
+  padding-top: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding-top: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding-top: $p
+
+@mixin soft-bottom($p)
+  padding-bottom: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding-bottom: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding-bottom: $p
+
+@mixin soft-right($p)
+  padding-right: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding-right: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding-right: $p
+
+@mixin soft-left($p)
+  padding-left: $p * $mobile-scale
+
+  @include breakpoint(tablet)
+    padding-left: $p * $tablet-scale
+
+  @include breakpoint(desktop)
+    padding-left: $p
+
+@mixin hard
+  padding: 0 !important
+
+@mixin hard-ends
+  padding-top:    0 !important
+  padding-bottom: 0 !important
+
+@mixin hard-sides
+  padding-left:  0 !important
+  padding-right: 0 !important
+
+@mixin hard-top
+  padding-top: 0 !important
+
+@mixin hard-bottom
+  padding-bottom: 0 !important
+
+@mixin hard-left
+  padding-left: 0 !important
+
+@mixin hard-right
+  padding-right: 0 !important

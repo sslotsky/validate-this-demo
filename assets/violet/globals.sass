@@ -1,0 +1,45 @@
+*
+  box-sizing: border-box
+
+html
+  font-size: 14px
+  line-height: 19px
+
+  @include breakpoint(tablet)
+    font-size: 16px
+    line-height: 22px
+
+  @include breakpoint(desktop)
+    font-size: 17px
+    line-height: 24px
+
+img
+  margin: 1rem 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: normal
+
+  a
+    border: 0
+
+h1
+  line-height: 1.1
+
+p
+  margin: 0
+
+p + p
+  margin-top: 1rem
+
+a
+  color: $gray3
+  text-decoration: none
+  border-bottom: 1px solid $gray3
+
+section
+  @include soft-ends($padding / 4)

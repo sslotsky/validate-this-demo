@@ -1,0 +1,18 @@
+ul.pagination
+  @include hard
+  @include disable-selection
+  width: 100%
+  list-style: none
+  text-align: center  
+
+  li
+    display: inline-block
+
+    span
+      @include soft-ends($padding / 8)
+      @include soft-sides($padding / 4)
+      display: inline-block
+      line-height: 1.8rem
+
+    button
+      @include flush

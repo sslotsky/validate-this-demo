@@ -1,0 +1,7 @@
+@include breakpoint(tablet)
+  .row
+    @include row
+
+@for $i from 1 through 10
+  .col-#{$i}
+    @include col($i)
